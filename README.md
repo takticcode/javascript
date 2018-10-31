@@ -8,6 +8,7 @@
   1. [הפניות](#references)
   1. [עצמים](#objects)
   1. [מערכים](#objects)
+  1. [Destructuring](#destructuring)
 
 
 </div>
