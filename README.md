@@ -1,5 +1,5 @@
 <div dir='rtl' align='right' style="    list-style-type: none;">
-  <h1>המדריך המלא לכתיבה בגאווה-סקריפט</h1p>
+  <h1>המדריך המלא לכתיבה בג'אווה-סקריפט</h1p>
   <h2>תוכן עיניינים</h2>
 בימים אלו אנו עובדים על מנת לתרגם מדריך זה לעברית! צרו קשר אם ברצונכם לעזור!
 
@@ -38,8 +38,8 @@
   1. [משאבים](#resources)
   1. [In the Wild](#in-the-wild)
   1. [תרגום](#translation)
-  1. [המדריך השלם לגאווה-סקריפט](#the-javascript-style-guide-guide)
-  1. [שוחח איתנו על גאווה-סקריפט](#chat-with-us-about-javascript)
+  1. [המדריך השלם לג'אווה-סקריפט](#the-javascript-style-guide-guide)
+  1. [שוחח איתנו על ג'אווה-סקריפט](#chat-with-us-about-javascript)
   1. [מפיצים](#contributors)
   1. [רישיון](#license)
   1. [Amendments](#amendments)
