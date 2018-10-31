@@ -1,8 +1,6 @@
-<div dir='rtl' align='right'>
+<div dir='rtl' align='right' style="    list-style-type: none;">
   <h1>המדריך המלא לכתיבה בגאווה-סקריפט</h1p>
   <h2>תוכן עיניינים</h2>
-
-
 
 - [טיפוסים](#)
 	- [Sub heading 01](#sub-heading-01)
