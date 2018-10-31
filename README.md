@@ -3,4 +3,14 @@
   <h2>תוכן עיניינים</h2>
 
 </div>
-[myAPI.APIExample](#myapiapiexample)
+This is a page for my project
+
+[[_TOC_]]
+
+## Credits
+
+bla bla
+
+## License
+
+bla bla
