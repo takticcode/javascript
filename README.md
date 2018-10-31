@@ -9,6 +9,17 @@
   1. [עצמים](#objects)
   1. [מערכים](#objects)
   1. [Destructuring](#destructuring)
+  1. [מחרוזות](#strings)
+  1. [פונקציות](#functions)
+  1. [Arrow Functions](#arrow-functions)
+  1. [מחלקות & בנאים](#classes--constructors)
+  1. [תבניות](#modules)
+  1. [Iterators and Generators](#iterators-and-generators)
+  1. [מאפיינים](#properties)
+  1. [משתנים](#variables)
+  1. [Hoisting](#hoisting)
+  1. [Comparison Operators & Equality](#comparison-operators--equality)
+
 
 
 </div>
