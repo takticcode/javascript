@@ -19,7 +19,17 @@
   1. [משתנים](#variables)
   1. [Hoisting](#hoisting)
   1. [Comparison Operators & Equality](#comparison-operators--equality)
-
+  1. [חסמים](#blocks)
+  1. [Control Statements](#control-statements)
+  1. [הערות](#comments)
+  1. [רווחים](#whitespace)
+  1. [Commas](#commas)
+  1. [נקודה פסיק](#semicolons)
+  1. [Type Casting & Coercion](#type-casting--coercion)
+  1. [Naming Conventions](#naming-conventions)
+  1. [Accessors](#accessors)
+  1. [אירועים](#events)
+ 
 
 
 </div>
