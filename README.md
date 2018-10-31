@@ -3,14 +3,8 @@
   <h2>תוכן עיניינים</h2>
 
 </div>
-This is a page for my project
+- [Paste Your Document In Here](#paste-your-document-in-here)
+  * [And a table of contents](#and-a-table-of-contents)
+  * [On the right](#on-the-right)
 
-[[_TOC_]]
-
-## Credits
-
-bla bla
-
-## License
-
-bla bla
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
