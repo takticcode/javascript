@@ -3,8 +3,8 @@
   <h2>תוכן עיניינים</h2>
 
 </div>
-- [Paste Your Document In Here](#paste-your-document-in-here)
-  * [And a table of contents](#and-a-table-of-contents)
-  * [On the right](#on-the-right)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+- [Heading 01](#heading-01)
+	- [Sub heading 01](#sub-heading-01)
+	- [Sub heading 02](#sub-heading-02)
+- [Heading 02](#heading-02)
+	- [Sub heading 03](#sub-heading-03)
