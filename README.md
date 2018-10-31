@@ -1,8 +1,8 @@
 <div dir='rtl' align='right' style="    list-style-type: none;">
   <h1>המדריך המלא לכתיבה בג'אווה-סקריפט</h1p>
   <h2>תוכן עיניינים</h2>
-בימים אלו אנו עובדים על מנת לתרגם מדריך זה לעברית. צרו קשר אם ברצונכם לעזור!
-https://github.com/airbnb/javascript
+
+בימים אלו אנו עובדים על מנת לתרגם מדריך זה לעברית. צרו קשר אם ברצונכם לעזור!<a href="https://github.com/airbnb/javascript"/>
 ## תוכן עניינים
   1. [טיפוסים](#types)
   1. [הפניות](#references)
