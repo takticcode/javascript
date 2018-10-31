@@ -32,9 +32,17 @@
   1. [jQuery](#jquery)
   1. [ECMAScript 5 Compatibility](#ecmascript-5-compatibility)
   1. [ECMAScript 6+ (ES 2015+) Styles](#ecmascript-6-es-2015-styles)
-  1. [Standard Library]
+  1. [Standard Library](#standard-library)
   1. [בדיקות](#testing)
-
+  1. [ביצועים](#performance)
+  1. [משאבים](#resources)
+  1. [In the Wild](#in-the-wild)
+  1. [תרגום](#translation)
+  1. [המדריך השלם לגאווה-סקריפט](#the-javascript-style-guide-guide)
+  1. [שוחח איתנו על גאווה-סקריפט](#chat-with-us-about-javascript)
+  1. [מפיצים](#contributors)
+  1. [רישיון](#license)
+  1. [Amendments](#amendments)
 
 
 </div>
