@@ -72,7 +72,7 @@
     - `object` - עצם
     - `array` - מערך
     - `function` - פונקציה
-    <div dir='ltr' align='left'>
+   <div dir='ltr' align='left'>
     ```javascript
     const foo = [1, 2];
     const bar = foo;
@@ -80,6 +80,7 @@
     bar[0] = 9;
 
     console.log(foo[0], bar[0]); // => 9, 9
-    ```</div>
+    ```
+   </div>
 **[⬆ חזור למעלה](#table-of-contents)**
 </div>
