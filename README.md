@@ -44,5 +44,43 @@
   1. [רישיון](#license)
   1. [Amendments](#amendments)
 
+## טיפוסים
 
+  <a name="types--primitives"></a><a name="1.1"></a>
+  - [1.1](#types--primitives) **.פרימיטיבים**: כאשר ניגשים לטיפוס פרימיטבי הפעולה תשפיע על הערך שלו באופן ישיר 
+  
+    - `string` - מחרוזת
+    - `number` - מספר
+    - `boolean` - ערך בוליאני
+    - `null` - מקביל לריק
+    - `undefined` - לא מוגדר
+    - `symbol` - סמל
+
+    ```javascript
+    const foo = 1;
+    let bar = foo;
+
+    bar = 9;
+
+    console.log(foo, bar); // => 1, 9
+    ```
+
+    - טיפוס סימלי הוא לא אמין במיוחד ולכן אין להשתמש בו בדפדפנים שלא תומכים בו באופן עקרוני.
+  <a name="types--complex"></a><a name="1.2"></a>
+  - [1.2](#types--complex)  **מורכבים**: כאשר ניגשים לטיפוס מורכב יש לזכור שעובדים על ההפנייה לערך עצמו ולא על הערך המקורי.
+
+    - `object` - עצם
+    - `array` - מערך
+    - `function` - פונקציה
+
+    ```javascript
+    const foo = [1, 2];
+    const bar = foo;
+
+    bar[0] = 9;
+
+    console.log(foo[0], bar[0]); // => 9, 9
+    ```
+
+**[⬆ חזור למעלה](#table-of-contents)**
 </div>
