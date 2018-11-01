@@ -55,7 +55,7 @@
     - `null` - מקביל לריק
     - `undefined` - לא מוגדר
     - `symbol` - סמל
- <div dir='ltr' align='left' style="    list-style-type: none;">
+    <div dir='ltr' align='left' style="    list-style-type: none;">
     ```javascript
     const foo = 1;
     let bar = foo;
@@ -64,7 +64,7 @@
 
     console.log(foo, bar); // => 1, 9
     ```
-</div>
+    </div>
     - טיפוס סימלי הוא לא אמין במיוחד ולכן אין להשתמש בו בדפדפנים שלא תומכים בו באופן עקרוני.
   <a name="types--complex"></a><a name="1.2"></a>
   - [1.2](#types--complex)  **מורכבים**: כאשר ניגשים לטיפוס מורכב יש לזכור שעובדים על ההפנייה לערך עצמו ולא על הערך המקורי.
@@ -72,7 +72,7 @@
     - `object` - עצם
     - `array` - מערך
     - `function` - פונקציה
- <div dir='ltr' align='left' style="    list-style-type: none;">
+    <div dir='ltr' align='left' style="    list-style-type: none;">
     ```javascript
     const foo = [1, 2];
     const bar = foo;
@@ -81,6 +81,6 @@
 
     console.log(foo[0], bar[0]); // => 9, 9
     ```
-</div>
+    </div>
 **[⬆ חזור למעלה](#table-of-contents)**
 </div>
