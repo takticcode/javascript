@@ -56,7 +56,7 @@
     - `undefined` - לא מוגדר
     - `symbol` - סמל
 <code dir="ltr" align="left">
-  
+
     const foo = 1;
     let bar = foo;
 
@@ -71,8 +71,9 @@
     - `object` - עצם
     - `array` - מערך
     - `function` - פונקציה
+
 <code dir="ltr" align="left">
-  
+
       const foo = [1, 2];
       const bar = foo;
       
