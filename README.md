@@ -85,4 +85,61 @@
 
 **[⬆ חזור למעלה](#table-of-contents)**
 
+## הפניות
+
+  <a name="references--prefer-const"></a><a name="2.1"></a>
+  - [2.1](#references--prefer-const) לפי הקונבציות האחרונות יש להשתמש ב-'const' מאשר ב-'var' עבור כל ההפניות; . eslint: [`prefer-const`](https://eslint.org/docs/rules/prefer-const.html), [`no-const-assign`](https://eslint.org/docs/rules/no-const-assign.html)
+
+    > למה? בכדאי לוודא שלא תהיה האפשרות להקצות מחדש את ההפניות ובכך להימנע משגיאות ומקוד לא ברור.
+
+<code dir="ltr" align="left">
+  
+    // bad
+    var a = 1;
+    var b = 2;
+
+    // good
+    const a = 1;
+    const b = 2;
+    
+</code>
+
+  <a name="references--disallow-var"></a><a name="2.2"></a>
+  - [2.2](#references--disallow-var) אם בכל זאת עלייך להקצות מחדש הפנייה, השתמש ב-'let' במקום ב-'var' . eslint: [`no-var`](https://eslint.org/docs/rules/no-var.html)
+
+    > למה? 'let' מוגדר לאותו הבלוק שהוא נמצא בו וכך נשמר הסדר הלוגי, לעומת 'var'. 
+
+<code dir="ltr" align="left">
+  
+    // bad
+    var count = 1;
+    if (true) {
+      count += 1;
+    }
+
+    // good, use the let.
+    let count = 1;
+    if (true) {
+      count += 1;
+    }
+    
+</code>
+
+  <a name="references--block-scope"></a><a name="2.3"></a>
+  - [2.3](#references--block-scope) יש לשים לב שגם 'let' וגם 'const' מוגדרים באופן מוחלט לאזור ההגדרה הראשוני שלהם.
+
+<code dir="ltr" align="left">
+
+    // const and let only exist in the blocks they are defined in.
+    {
+      let a = 1;
+      const b = 1;
+    }
+    console.log(a); // ReferenceError
+    console.log(b); // ReferenceError
+    
+</code>
+
+**[⬆ חזור למעלה](#table-of-contents)**
+
 </div>
