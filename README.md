@@ -142,8 +142,6 @@
 
 **[⬆ חזור למעלה](#table-of-contents)**
 
-</div>
-
 ## עצמים
 
   <a name="objects--no-new"></a><a name="3.1"></a>
@@ -336,3 +334,5 @@
 </code>
 
 **[⬆ חזור למעלה](#table-of-contents)**
+
+</div> <!-- RTL container !-->
