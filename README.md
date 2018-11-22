@@ -2,7 +2,7 @@
   <h1>[airbnb-style] המדריך המלא לכתיבה בג'אווה-סקריפט</h1p>
   <h2>תוכן עיניינים</h2>
 
-בימים אלו אנו עובדים על מנת לתרגם מדריך זה לעברית. צרו קשר אם ברצונכם לעזור!<a href="https://github.com/airbnb/javascript"> המדריך המקורי</a>
+בימים אלו אנו עובדים על מנת לתרגם מדריך זה לעברית. צרו קשר אם ברצונכם לעזור!<a href="https://github.com/airbnb/javascript"> המדריך באנגלית</a>
 ## תוכן עניינים
   1. [טיפוסים](#types)
   1. [הפניות](#references)
@@ -367,7 +367,7 @@
 </code>
 
   <a name="es6-array-spreads"></a><a name="4.3"></a>
-  - [4.3](#es6-array-spreads) יש להשתמש בהרחבת מערך `...` על מנת להעתיק אותו.
+  - [4.3](#es6-array-spreads) יש להשתמש בהפצת מערך `...` על מנת להעתיק אותו.
 
 <code dir="ltr" align="left">
   
@@ -387,7 +387,7 @@
 
   <a name="arrays--from"></a>
   <a name="arrays--from-iterable"></a><a name="4.4"></a>
-  - [4.4](#arrays--from-iterable) יש להמיר עצם מסוג איטרטור למערך באמצעות השימוש בהרחבה ..., מאשר ב- [`Array.from`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/from).
+  - [4.4](#arrays--from-iterable) יש להמיר עצם מסוג איטרטור למערך באמצעות השימוש בהפצה ..., מאשר ב- [`Array.from`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/from).
 
 <code dir="ltr" align="left">
   
@@ -419,7 +419,7 @@
 </code>
 
   <a name="arrays--mapping"></a>
-  - [4.6](#arrays--mapping) השתמש [`Array.from`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/from) instead of spread `...` for mapping over iterables, because it avoids creating an intermediate array.
+  - [4.6](#arrays--mapping) יש להשתמש ב - [`Array.from`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/from) במקום בהפצה  `...` בכדי למפות איטרבלים, מפני שפעולה זאת מונעת יצירה של מערך ביניים.
 
 <code dir="ltr" align="left">
 
@@ -433,7 +433,7 @@
 
 
   <a name="arrays--callback-return"></a><a name="4.5"></a>
-  - [4.7](#arrays--callback-return) Use return statements in array method callbacks. It’s ok to omit the return if the function body consists of a single statement returning an expression without side effects, following [8.2](#arrows--implicit-return). eslint: [`array-callback-return`](https://eslint.org/docs/rules/array-callback-return)
+  - [4.7](#arrays--callback-return) יש להחזיר ערך כלשהוא כאשר מבצעים פעולה על מערך. זה בסדר להשמיט את המילה השמורה `return` אם המבנה של הפונקציה מאפשר שאת., following [8.2](#arrows--implicit-return). eslint: [`array-callback-return`](https://eslint.org/docs/rules/array-callback-return)
 
 <code dir="ltr" align="left">
   
@@ -482,7 +482,7 @@
 </code>
 
   <a name="arrays--bracket-newline"></a>
-  - [4.8](#arrays--bracket-newline) Use line breaks after open and before close array brackets if an array has multiple lines
+  - [4.8](#arrays--bracket-newline) יש לרדת שורה לאחר פתיחה וסגירה של סוגריים במערך אם למערך יש מספר שורות.
 
 <code dir="ltr" align="left">
   
@@ -490,12 +490,13 @@
     const arr = [
       [0, 1], [2, 3], [4, 5],
     ];
-
+    
     const objectInArray = [{
       id: 1,
     }, {
       id: 2,
     }];
+
 
     const numberInArray = [
       1, 2,
@@ -512,7 +513,8 @@
         id: 2,
       },
     ];
-
+    
+    // good
     const numberInArray = [
       1,
       2,
