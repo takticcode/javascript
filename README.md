@@ -2,13 +2,13 @@
   <h1>[airbnb-style] המדריך המלא לכתיבה בג'אווה-סקריפט</h1p>
   <h2>תוכן עיניינים</h2>
 
-בימים אלו אנו עובדים על מנת לתרגם מדריך זה לעברית. צרו קשר אם ברצונכם לעזור!<a href="https://github.com/airbnb/javascript"> המדריך באנגלית</a>
+בימים אלו אנו עובדים על מנת לתרגם מדריך זה לעברית. יותר מנשמח לעזרה נוספת!<a href="https://github.com/airbnb/javascript"> המדריך באנגלית</a>
 ## תוכן עניינים
   1. [טיפוסים](#types)
   1. [הפניות](#references)
   1. [עצמים](#objects)
   1. [מערכים](#objects)
-  1. [Destructuring](#destructuring)
+  1. [פיצול](#destructuring)
   1. [מחרוזות](#strings)
   1. [פונקציות](#functions)
   1. [Arrow Functions](#arrow-functions)
@@ -160,7 +160,7 @@
   <a name="es6-computed-properties"></a><a name="3.4"></a>
   - [3.2](#es6-computed-properties) Use computed property הקצו שמות לערכים בצורה מחושבת בעת יצירת עצמים עם שמות דינמים לערכים.
 
-    > Why? למה? בצורה זאת תוכלו להגדיר את כל הערכים של אובייקט בפעולה אחת בלבד.
+    > למה? בצורה זאת תוכלו להגדיר את כל הערכים של עצם בפעולה אחת בלבד.
 
 <code dir="ltr" align="left">
 
@@ -185,7 +185,7 @@
 </code>
 
   <a name="es6-object-shorthand"></a><a name="3.5"></a>
-  - [3.3](#es6-object-shorthand) צרו פונקציה לאובייקט בצורה מקוצרת. eslint: [`object-shorthand`](https://eslint.org/docs/rules/object-shorthand.html)
+  - [3.3](#es6-object-shorthand) צרו פונקציה לעצם בצורה מקוצרת. eslint: [`object-shorthand`](https://eslint.org/docs/rules/object-shorthand.html)
 
 
 <code dir="ltr" align="left">
@@ -403,7 +403,7 @@
 
 
   <a name="arrays--from-array-like"></a>
-  - [4.5](#arrays--from-array-like) יש להשתמש [`Array.from`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/from) בכדי להמיר אובייקט שדומה למערך , למערך.
+  - [4.5](#arrays--from-array-like) יש להשתמש [`Array.from`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/from) בכדי להמיר עצם שדומה למערך , למערך.
   
 
 <code dir="ltr" align="left">
@@ -522,6 +522,83 @@
 
 </code>
 
-**[⬆ back to top](#תוכן-עניינים)**
+**[⬆ חזור למעלה](#תוכן-עניינים)**
+
+## פיצול
+
+  <a name="destructuring--object"></a><a name="5.1"></a>
+  - [5.1](#destructuring--object) יש לפצל את העצם לתתי הפניות כאשר ניגשים לערכים שלו במקום לגשת לערך העצם באופן ישיר. eslint: [`prefer-destructuring`](https://eslint.org/docs/rules/prefer-destructuring)
+
+    > למה? פיצול יחסוך לך קוד רב, יצירת הפניות זמניות לאותם ההערכים.
+
+<code dir="ltr" align="left">
+
+    // bad
+    function getFullName(user) {
+      const firstName = user.firstName;
+      const lastName = user.lastName;
+
+      return `${firstName} ${lastName}`;
+    }
+
+    // good
+    function getFullName(user) {
+      const { firstName, lastName } = user;
+      return `${firstName} ${lastName}`;
+    }
+
+    // best
+    function getFullName({ firstName, lastName }) {
+      return `${firstName} ${lastName}`;
+    }
+
+</code>
+
+  <a name="destructuring--array"></a><a name="5.2"></a>
+  - [5.2](#destructuring--array) יש להשתמש בפיצול גם במערך. eslint: [`prefer-destructuring`](https://eslint.org/docs/rules/prefer-destructuring)
+
+<code dir="ltr" align="left">
+
+    const arr = [1, 2, 3, 4];
+
+    // bad
+    const first = arr[0];
+    const second = arr[1];
+
+    // good
+    const [first, second] = arr;
+    // output
+    console.log(first, second);
+    1 2
+
+</code>
+
+  <a name="destructuring--object-over-array"></a><a name="5.3"></a>
+  - [5.3](#destructuring--object-over-array) יש להשתמש בפיצול כעצם כאשר מחזירים ערכים, במקום פיצול כמערך.
+
+    > למה? אז תהיה האפשרות להוסיף ערכים חדשים או לחלופין לשנות את הסדר שלהם מבלי לשנות את כל הפניות בקוד.
+
+    ```javascript
+    // bad
+    function processInput(input) {
+      // then a miracle occurs
+      return [left, right, top, bottom];
+    }
+
+    // the caller needs to think about the order of return data
+    // מי שמזמין את הפונקצייה צריך לדעת את הסדר של הערכים
+    const [left, __, top] = processInput(input);
+
+    // good
+    function processInput(input) {
+      // then a miracle occurs
+      return { left, right, top, bottom };
+    }
+
+    // בחירה רק של הערכים הרצויים
+    const { left, top } = processInput(input);
+    ```
+
+**[⬆ חזור למעלה](#תוכן-עניינים)**
 
 </div> <!-- RTL container !-->
