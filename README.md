@@ -578,7 +578,8 @@
 
     > למה? אז תהיה האפשרות להוסיף ערכים חדשים או לחלופין לשנות את הסדר שלהם מבלי לשנות את כל הפניות בקוד.
 
-    ```javascript
+<code dir="ltr" align="left">
+
     // bad
     function processInput(input) {
       // then a miracle occurs
@@ -597,8 +598,101 @@
 
     // בחירה רק של הערכים הרצויים
     const { left, top } = processInput(input);
-    ```
+    
+</code>
 
 **[⬆ חזור למעלה](#תוכן-עניינים)**
+
+
+## מחרוזות
+
+  <a name="strings--quotes"></a><a name="6.1"></a>
+  - [6.1](#strings--quotes) יש להשתמש בגרשים `''` עבור מחרוזות. eslint: [`quotes`](https://eslint.org/docs/rules/quotes.html)
+
+<code dir="ltr" align="left">
+    
+    // bad
+    const name = "Capt. Janeway";
+
+    // bad - יש להשתמש בתחביר זה רק כאשר משרשרים אחרת יש להשתמש בגרשים רגילים 
+    const name = `Capt. Janeway`;
+
+    // good
+    const name = 'Capt. Janeway';
+
+</code>
+
+  <a name="strings--line-length"></a><a name="6.2"></a>
+  - [6.2](#strings--line-length) אין לכתוב מחרוזות שעוברות את ה-100 תווים על גבי מספר שורות באמצעות שרשור.
+
+    > למה? קשה לעבוד עם מחרוזות מחולקות והם הופכות את הקוד לפחות נגיש לחיפוש.
+<code dir="ltr" align="left">
+
+    // bad
+    const errorMessage = 'This is a super long error that was thrown because \
+    of Batman. When you stop to think about how Batman had anything to do \
+    with this, you would get nowhere \
+    fast.';
+
+    // bad
+    const errorMessage = 'This is a super long error that was thrown because ' +
+      'of Batman. When you stop to think about how Batman had anything to do ' +
+      'with this, you would get nowhere fast.';
+
+    // good
+    const errorMessage = 'This is a super long error that was thrown because of Batman. When you stop to think about how Batman had anything to do with this, you would get nowhere fast.';
+
+</code>
+
+  <a name="es6-template-literals"></a><a name="6.4"></a>
+  - [6.3](#es6-template-literals) בעת בניית מחרוזות דינמיות, יש להשתמש במחרוזת כתבנית במקום שרשור. eslint: [`prefer-template`](https://eslint.org/docs/rules/prefer-template.html) [`template-curly-spacing`](https://eslint.org/docs/rules/template-curly-spacing)
+
+    > למה? מחרוזות שהם תבניות נוחות יותר לקריאה, מקצרות את התחביר של הקוד, עם שורות חדשות ופעולות שעוזרת להרכיב מחרוזת בצורה נקיה יותר.
+
+<code dir="ltr" align="left">
+
+    // bad
+    function sayHi(name) {
+      return 'How are you, ' + name + '?';
+    }
+
+    // bad
+    function sayHi(name) {
+      return ['How are you, ', name, '?'].join();
+    }
+
+    // bad
+    function sayHi(name) {
+      return `How are you, ${ name }?`;
+    }
+
+    // good
+    function sayHi(name) {
+      return `How are you, ${name}?`;
+    }
+
+</code>
+
+  <a name="strings--eval"></a><a name="6.5"></a>
+  - [6.4](#strings--eval) לעולם אין להשתמש ב-'eval()' על מחרוזת זה חושף את הקוד לפריץ הרבה יותר. eslint: [`no-eval`](https://eslint.org/docs/rules/no-eval)
+
+  <a name="strings--escaping"></a>
+  - [6.5](#strings--escaping) אין להשתמש בלוסכן שמאלי מיותרים במחרוזות. eslint: [`no-useless-escape`](https://eslint.org/docs/rules/no-useless-escape)
+
+    > למה? לוכסנים שמאלים מקשים על קריאת הקוד, יש להשתמש רק שהכרחי.
+
+<code dir="ltr" align="left">
+
+    // bad
+    const foo = '\'this\' \i\s \"quoted\"';
+
+    // good
+    const foo = '\'this\' is "quoted"';
+    const foo = `my name is '${name}'`;
+
+</code>
+
+**[⬆ חזור למעלה](#תוכן-עניינים)**
+
 
 </div> <!-- RTL container !-->
